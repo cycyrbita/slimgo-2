@@ -1,9 +1,15 @@
 /* stylelint-disable */
 
 @font-face {
-	font-family: 'AvenirNextCyr';
-	src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"),
-		url('../fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff2') format('woff2');
+	font-family: 'Uni-neue';
+	src: url("../fonts/Uni-neue/UniNeueRegular.woff") format("woff");
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Uni-neue';
+	src: url("../fonts/Uni-neue/UniNeueBold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
 }

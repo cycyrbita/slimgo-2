@@ -1,0 +1,233 @@
+
+.face {
+    position: relative;
+    display: flex;
+}
+
+.face__product {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% - 50px), 165px);
+
+    &::before {
+        position: absolute;
+        top: 50px;
+        left: -20px;
+        width: 131px;
+        height: 145px;
+        background-image: url("../media/face/arrow.png");
+        background-repeat: no-repeat;
+        content: '';
+    }
+}
+
+.face__box {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.face__title {
+    position: relative;
+    padding-left: 40px;
+    font-weight: 700;
+    font-size: 88px;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: 470px;
+    line-height: 1;
+    margin-bottom: 60px;
+
+    &::before {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 23px;
+        height: calc(100% + 60px);
+        content: '';
+        background-color: #49CD80;
+    }
+
+    & span {
+        display: block;
+        color: #000;
+        font-size: 44px;
+        text-transform: none;
+    }
+}
+
+.face__list {
+    margin-bottom: 195px;
+}
+
+.face__item {
+    max-width: 330px;
+    min-height: 70px;
+    padding-left: 90px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 70px;
+
+    &:nth-child(1) {
+        background-image: url("../media/face/icon-1.png");
+    }
+
+    &:nth-child(2) {
+        max-width: 275px;
+        background-image: url("../media/face/icon-2.png");
+    }
+
+    &:nth-child(3) {
+        background-image: url("../media/face/icon-3.png");
+    }
+
+    & + & {
+        margin-top: 15px;
+    }
+}
+
+.face__footer {
+    font-size: 20px;
+
+    & mark {
+        &:first-child {
+            display: block;
+            font-size: 36px;
+            color: #C181F8;
+        }
+
+        &:last-child {
+            color: #49CD80;
+        }
+    }
+}
+
+@media (max-width: 1310px) {
+    .face {
+        flex-wrap: wrap;
+    }
+
+    .face__box {
+        width: auto;
+        
+        &:first-child {
+            order: 1;
+            width: calc(100% - 330px);
+            margin-right: 30px;
+        }
+
+        &:last-child {
+            order: 2;
+        }
+    }
+
+    .face__title {
+        font-size: 66px;
+
+        & span {
+            font-size: 38px;
+        }
+
+        &::before {
+            width: 15px;
+        }
+    }
+
+    .face__item {
+        display: flex;
+        align-items: center;
+        max-width: 100% !important;
+    }
+
+    .face__product {
+        position: static;
+        order: 3;
+        transform: translate(0, 0);
+        max-width: 400px;
+        margin-top: -80px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .face__list {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .face {
+        flex-direction: column;
+    }
+
+    .face__box {
+        width: 100% !important;
+
+        &:first-child {
+            order: 1;
+        }
+
+        &:last-child {
+            order: 3;
+        }
+    }
+
+    .face__product {
+        margin-top: 30px;
+        margin-bottom: -60px;
+        max-width: 100%;
+        order: 2;
+    }
+
+    .face__footer {
+        & mark {
+            &:first-child {
+                color: #fff;
+            }
+
+            &:last-child {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .face__title {
+        font-size: 50px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+
+        & span {
+            font-size: 26px;
+        }
+
+        &::before {
+            top: 0;
+            height: 100%;
+        }
+    }
+
+    .face__item {
+        min-height: 50px;
+        padding-left: 60px;
+        font-size: 18px;
+        background-size: 50px;
+    }
+
+    .face__list {
+        margin-bottom: 30px;
+    }
+
+    .form__price-old {
+        font-size: 20px;
+    }
+
+    .form__price-new {
+        font-size: 30px;
+    }
+}

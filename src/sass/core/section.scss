@@ -3,12 +3,24 @@
     padding-top: 80px;
     padding-bottom: 80px;
     background-repeat: no-repeat;
+
+    &_face {
+        background-image: url('../media/section/face.jpg');
+        background-position: center top;
+    }
 }
 
 @media (max-width: 1310px) {
     .section {
         padding-top: 60px;
         padding-bottom: 60px;
+
+        &_face {
+            background-color: #d2a1fc;
+            background-image: url('../media/section/face-1310.jpg');
+            background-position: center bottom;
+        }
+    }
 }
 
 @media (max-width: 768px) {
