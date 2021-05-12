@@ -31,6 +31,12 @@
             height: 730px;
         }
     }
+
+    &_why {
+        min-height: 890px;
+        background-image: url('../media/section/why.jpg');
+        background-position: center top;
+    }
 }
 
 @media (max-width: 1310px) {
@@ -52,6 +58,11 @@
                 display: none;
             }
         }
+
+        &_why {
+            min-height: 628px;
+            background-image: url('../media/section/why-1310.jpg');
+        }
     }
 }
 
@@ -62,6 +73,12 @@
 
         &_result {
             padding-bottom: 500px;
+        }
+
+        &_why {
+            padding-top: 400px;
+            min-height: 0;
+            background-image: url('../media/section/why-768.jpg');
         }
     }
 }
@@ -74,6 +91,13 @@
         &_result {
             padding-bottom: 320px;
             background-image: url("../media/section/result-480.jpg");
+        }
+
+        &_why {
+            padding-bottom: 85%;
+            background-image: url('../media/section/why-480.jpg');
+            background-position: center bottom;
+            background-size: contain;
         }
     }
 }
