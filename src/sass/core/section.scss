@@ -5,8 +5,31 @@
     background-repeat: no-repeat;
 
     &_face {
+        position: relative;
+        z-index: 1;
         background-image: url('../media/section/face.jpg');
         background-position: center top;
+    }
+
+    &_result {
+        position: relative;
+        padding-bottom: 590px;
+        background-color: #F2FFF8;
+        background-image: url("../media/section/result.jpg");
+        background-position: center bottom;
+
+        &::before {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url("../media/section/result-human.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 1252px;
+            height: 730px;
+        }
     }
 }
 
@@ -20,6 +43,15 @@
             background-image: url('../media/section/face-1310.jpg');
             background-position: center bottom;
         }
+
+        &_result {
+            padding-bottom: 500px;
+            background-image: url("../media/section/result-1310.jpg");
+
+            &::before {
+                display: none;
+            }
+        }
     }
 }
 
@@ -27,6 +59,10 @@
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
+
+        &_result {
+            padding-bottom: 500px;
+        }
     }
 }
 
@@ -34,5 +70,10 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &_result {
+            padding-bottom: 320px;
+            background-image: url("../media/section/result-480.jpg");
+        }
     }
 }
