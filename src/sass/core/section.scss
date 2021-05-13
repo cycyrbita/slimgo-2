@@ -43,6 +43,19 @@
         background-image: url('../media/section/secret.jpg');
         background-position: right top;
     }
+
+    &_program {
+        position: relative;
+        min-height: 1000px;
+        background-image: url('../media/section/program.jpg');
+        background-position: center top;
+    }
+}
+
+.section__product {
+    position: absolute;
+    right: 50px;
+    bottom: 35px;
 }
 
 @media (max-width: 1310px) {
@@ -75,6 +88,21 @@
             background-image: url('../media/section/secret-1310.jpg');
             background-position: center bottom;
         }
+
+        &_program {
+            min-height: 0;
+            background-color: #c384f8;
+            background-image: url('../media/section/program-1310.jpg');
+            background-position: center bottom;
+        }
+    }
+
+    .section__product {
+        position: static;
+        max-width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -120,5 +148,14 @@
         &_secret {
             padding-bottom: 320px;
         }
+
+        &_program {
+            background-image: url('../media/section/program-480.jpg');
+            background-position: center bottom;
+        }
+    }
+
+    .section__product {
+        max-width: 290px;
     }
 }
