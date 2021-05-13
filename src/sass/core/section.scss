@@ -58,6 +58,12 @@
     bottom: 35px;
 }
 
+@media (max-width: 1920px) {
+    .section__product {
+        max-width: 700px;
+    }
+}
+
 @media (max-width: 1310px) {
     .section {
         padding-top: 60px;
