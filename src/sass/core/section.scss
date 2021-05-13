@@ -12,6 +12,7 @@
     }
 
     &_result {
+        display: none;
         position: relative;
         padding-bottom: 590px;
         background-color: #F2FFF8;
@@ -58,6 +59,11 @@
 
     &_info {
         background-color: #F5F5F5;
+    }
+
+    &_quest {
+        background-image: url('../media/section/quest.jpg');
+        background-position: center top;
     }
 }
 
