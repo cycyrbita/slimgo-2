@@ -37,6 +37,12 @@
         background-image: url('../media/section/why.jpg');
         background-position: center top;
     }
+
+    &_secret {
+        min-height: 800px;
+        background-image: url('../media/section/secret.jpg');
+        background-position: right top;
+    }
 }
 
 @media (max-width: 1310px) {
@@ -63,6 +69,12 @@
             min-height: 628px;
             background-image: url('../media/section/why-1310.jpg');
         }
+
+        &_secret {
+            padding-bottom: 490px;
+            background-image: url('../media/section/secret-1310.jpg');
+            background-position: center bottom;
+        }
     }
 }
 
@@ -79,6 +91,11 @@
             padding-top: 400px;
             min-height: 0;
             background-image: url('../media/section/why-768.jpg');
+        }
+
+        &_secret {
+            padding-bottom: 320px;
+            background-image: url('../media/section/secret-768.jpg');
         }
     }
 }
@@ -98,6 +115,10 @@
             background-image: url('../media/section/why-480.jpg');
             background-position: center bottom;
             background-size: contain;
+        }
+
+        &_secret {
+            padding-bottom: 320px;
         }
     }
 }
