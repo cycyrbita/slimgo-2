@@ -50,6 +50,11 @@
         background-image: url('../media/section/program.jpg');
         background-position: center top;
     }
+
+    &_professional {
+        background-image: url('../media/section/professional.jpg');
+        background-position: center top;
+    }
 }
 
 .section__product {
@@ -100,6 +105,12 @@
             background-color: #c384f8;
             background-image: url('../media/section/program-1310.jpg');
             background-position: center bottom;
+        }
+
+        &_professional {
+            background-image: url('../media/section/professional-1310.jpg');
+            background-position: center bottom;
+            background-color: #f5f5f5;
         }
     }
 
@@ -158,6 +169,10 @@
         &_program {
             background-image: url('../media/section/program-480.jpg');
             background-position: center bottom;
+        }
+
+        &_professional {
+            background-image: url('../media/section/professional-480.jpg');
         }
     }
 
