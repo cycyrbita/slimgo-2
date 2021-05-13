@@ -5,25 +5,8 @@ $(document).ready(function () {
     $('.js-commits__box').owlCarousel({
         loop: true,
         autoHeight: true,
-        margin: 40,
-        stagePadding: 20,
-        responsive : {
-            320 : {
-                items: 1,
-                margin: 15,
-                stagePadding: 0,
-                nav: true
-            },
-
-            768 : {
-                items: 2,
-                nav: false
-            },
-
-            1310 : {
-                items: 3
-            }
-        }
+        items: 1,
+        margin: 15
     });
 
     function Start() {
