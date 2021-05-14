@@ -93,6 +93,13 @@ $(document).ready(function () {
                     $('.result').hide();
                     $('.result_4').show();
                 }
+
+                $('html, body').animate({
+                    scrollTop: $('.section_result').offset().top
+                }, {
+                    duration: 370,
+                    easing: "linear"
+                });
             }
         });
     }

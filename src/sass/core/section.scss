@@ -42,7 +42,7 @@
     &_secret {
         min-height: 800px;
         background-image: url('../media/section/secret.jpg');
-        background-position: right top;
+        background-position: center top;
     }
 
     &_program {
@@ -69,7 +69,7 @@
 
 .section__product {
     position: absolute;
-    right: 50px;
+    left: 50%;
     bottom: 35px;
 }
 
@@ -166,7 +166,7 @@
         }
 
         &_why {
-            padding-bottom: 85%;
+            padding-bottom: 75%;
             background-image: url('../media/section/why-480.jpg');
             background-position: center bottom;
             background-size: contain;
@@ -183,6 +183,12 @@
 
         &_professional {
             background-image: url('../media/section/professional-480.jpg');
+        }
+
+        &_face {
+            background-image: url('../media/section/face-480.jpg');
+            background-position: center top;
+            background-color: #fff;
         }
     }
 
